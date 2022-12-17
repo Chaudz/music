@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('header'); -%>
+  <body>
+    <div
+      class="main"
+      style="
+        background-image: url(./img/background-theme/backroundThemes/0.svg);
+      "
+    >
+      <div class="grid">
+        <%- include('sidebar'); -%>
+
+        <!-- BEGIN CONTAINER -->
+        <div class="main-container">
+          <!-- header--active -->
+          <div class="header-wrapper">
+            <div class="header">
+              <div class="header__undo mobile-hiden js__sub-color">
+                <i class="fas fa-arrow-left hover js__toast"></i>
+                <i
+                  class="fas fa-arrow-right hover js__toast header__undo--disble"
+                ></i>
+              </div>
+              <div class="header__width-search js__backgroundColor">
+                <i
+                  class="fas fa-search header__width-search-icon js__sub-color"
+                ></i>
+                <!-- header__width-search-input--white -->
+                <!-- header__width-search-input--dark -->
+                <input
+                  placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV . . ."
+                  type="text"
+                  class="header__width-search-input"
+                />
+                <!-- header__width-search-sub--white -->
+                <!-- header__width-search-sub--green -->
+                <!-- header__width-search-sub--gray -->
+                <!-- header__width-search-sub--purple -->
+                <div class="header__width-search-sub">
+                  <span class="header__width-search-sub-header js__main-color"
+                    >Đề xuất cho bạn</span
+                  >
+                  <ul class="header__width-search-sub-list">
+                    <li class="header__width-search-sub-item">
+                      <a href="#" class="header__width-search-sub-item-link">
+                        <i class="fas fa-arrows-alt-h js__sub-color"></i>
+                        <span class="js__sub-color">là ai</span>
+                      </a>
+                    </li>
+                    <li class="header__width-search-sub-item">
+                      <a href="#" class="header__width-search-sub-item-link">
+                        <i class="fas fa-arrows-alt-h js__sub-color"></i>
+                        <span class="js__sub-color">adele</span>
+                      </a>
+                    </li>
+                    <li class="header__width-search-sub-item">
+                      <a href="#" class="header__width-search-sub-item-link">
+                        <i class="fas fa-arrows-alt-h js__sub-color"></i>
+                        <span class="js__sub-color">chung tình</span>
+                      </a>
+                    </li>
+                    <li class="header__width-search-sub-item">
+                      <a href="#" class="header__width-search-sub-item-link">
+                        <i class="fas fa-arrows-alt-h js__sub-color"></i>
+                        <span class="js__sub-color">zing choice</span>
+                      </a>
+                    </li>
+                    <li class="header__width-search-sub-item">
+                      <a href="#" class="header__width-search-sub-item-link">
+                        <i class="fas fa-arrows-alt-h js__sub-color"></i>
+                        <span class="js__sub-color">#zingchart</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__right">
+                <div class="header__theme js__sub-color js__backgroundColor">
+                  <i class="fas fa-tshirt"></i>
+                </div>
+                <div
+                  class="header__upload mobile-hiden js__sub-color js__toast js__backgroundColor hover"
+                >
+                  <i class="fas fa-upload"></i>
+                </div>
+
+                <div class="header__right-overlay hiden"></div>
+                <!-- header__setting--active -->
+                <div
+                  class="header__setting mobile-hiden js__sub-color js__backgroundColor"
+                >
+                  <i class="fas fa-cog header__setting-icon"></i>
+                  <ul class="header__setting-list">
+                    <li class="header__setting-item">
+                      <i class="fas fa-ban"></i>
+                      Danh sách chặn
+                    </li>
+                    <li class="header__setting-item">
+                      <i class="far fa-play-circle"></i>
+                      Chất lượng nhạc
+                    </li>
+                    <li class="header__setting-item">
+                      <i class="fas fa-external-link-square-alt"></i>
+                      Trình phát nhạc
+                    </li>
+                    <span class="header__setting-line"></span>
+                    <li class="header__setting-item">
+                      <i class="fas fa-info-circle"></i>
+                      Giới thiệu
+                    </li>
+                    <li class="header__setting-item">
+                      <i class="far fa-flag"></i>
+                      Góp ý
+                    </li>
+                    <li class="header__setting-item">
+                      <i class="fas fa-phone-alt"></i>
+                      Liên hệ
+                    </li>
+                    <li class="header__setting-item">
+                      <i class="fab fa-adversal"></i>
+                      Quảng cáo
+                    </li>
+                    <li class="header__setting-item">
+                      <i class="fas fa-notes-medical"></i>
+                      Thoả thuận sử dụng
+                    </li>
+                    <li class="header__setting-item">
+                      <i class="fas fa-shield-alt"></i>
+                      Chính sách bảo mật
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__user" id="header__user">
+                  <div style="text-align: center">
+                    <div src="" alt="user" class="header__user-img"></div>
+                    <a
+                      class="name-user"
+                      style="color: #ffff; text-align: center"
+                    ></a>
+                    <ul class="login-user">
+                      <li class="login">Đăng Nhập</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-container-discover js__container-panes">
+            <div class="option-all__song option-all__margin_bot">
+              <div class="option-heading option-all__song-heading">
+                <h3
+                  class="option-heading-name option-all__song-heading-left mobile-hiden js__main-color"
+                >
+                  Bài Hát
+                </h3>
+                <div class="option-all__song-heading-right"></div>
+              </div>
+              <div class="grid row">
+                <div class="col l-12 m-12 s-12">
+                  <div class="option-all__songs">
+                    <ul
+                      class="option-all__songs-list songs-list list-main"
+                    ></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END CONTAINER -->
+
+        <!-- LIST SONG MOBILE -->
+        <!-- <div class="container-mobile">
+                tesst
+            </div> -->
+
+        <!-- theme modal -->
+        <!-- theme-modal--avtive -->
+        <div class="theme-modal">
+          <div class="theme-modal__overlay"></div>
+          <div class="theme-modal__body">
+            <div class="theme-modal__close-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <h3 class="theme-modal__body-headding js__main-color">Giao diện</h3>
+            <div class="theme-modal__body-group-wrapper">
+              <div class="theme-modal__body-group">
+                <span class="theme-modal__body-group-headding js__main-color"
+                  >Chủ đề</span
+                >
+                <ul class="theme-modal__body-group-list">
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme1/theme1.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Zing Music Awards</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme1/theme2.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Tháp Eiffel</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="theme-modal__body-group">
+                <span class="theme-modal__body-group-headding js__main-color"
+                  >Nghệ Sĩ</span
+                >
+                <ul class="theme-modal__body-group-list">
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme2/theme1.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Rosé</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme2/theme2.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >IU</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div class="theme-modal__body-group-item-img-wrapper">
+                        <div
+                          class="theme-modal__body-group-item-img"
+                          style="
+                            background-image: url(./img/background-theme/modalThemes/modalTheme2/theme3.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Ji Chang Wook</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div class="theme-modal__body-group-item-img-wrapper">
+                        <div
+                          class="theme-modal__body-group-item-img"
+                          style="
+                            background-image: url(./img/background-theme/modalThemes/modalTheme2/theme4.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Lisa</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme2/theme5.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Jennie Kim</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme2/theme6.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Jisoo</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="theme-modal__body-group">
+                <span class="theme-modal__body-group-headding js__main-color"
+                  >Màu tối</span
+                >
+                <ul class="theme-modal__body-group-list">
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme1.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Tối</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme2.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Tím</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme3.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Xanh đậm</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme4.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Xanh biển</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme5.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Xanh lá</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme6.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Nâu</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme7.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Hồng</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme3/theme8.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Đỏ</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="theme-modal__body-group">
+                <span class="theme-modal__body-group-headding js__main-color"
+                  >Màu sáng</span
+                >
+                <ul class="theme-modal__body-group-list">
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme4/theme1.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Sáng</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme4/theme2.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Xám</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme4/theme3.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Xanh nhạt</span
+                    >
+                  </li>
+                  <li class="theme-modal__body-group-item js-theme-item">
+                    <div class="theme-modal__body-group-item-img-wrapper">
+                      <div
+                        class="theme-modal__body-group-item-img"
+                        style="
+                          background-image: url(./img/background-theme/modalThemes/modalTheme4/theme4.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <span
+                      class="theme-modal__body-group-item-name js__main-color"
+                      >Hồng cánh sen</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BEGIN NEXT-SONG -->
+
+        <!-- END NEXT-SONG -->
+
+        <!-- BEGIN TAB ON MOBILE -->
+        <div class="mobile-tab">
+          <ul class="mobile-tab__list">
+            <li
+              class="mobile-tab__item active js__mobile-tab__item js__main-color mylist"
+            >
+              <i class="far fa-play-circle"></i>
+              Cá Nhân
+            </li>
+            <li
+              class="mobile-tab__item js__mobile-tab__item js__main-color listhome"
+            >
+              <i class="fas fa-compact-disc"></i>
+              Khám Phá
+            </li>
+            <li class="mobile-tab__item js__mobile-tab__item js__main-color">
+              <i class="fas fa-chart-line"></i>
+              #zingchart
+            </li>
+            <li class="mobile-tab__item js__main-color">
+              <i class="fas fa-broadcast-tower"></i>
+              Radio
+            </li>
+            <li class="mobile-tab__item js__main-color">
+              <i class="far fa-list-alt"></i>
+              Theo Dõi
+            </li>
+          </ul>
+        </div>
+        <!-- END TAB ON MOBILE -->
+
+        <!-- BEGIN MUSIC CONTROL -->
+        <div class="main-music-control"></div>
+        <!-- END MUSIC CONTROL -->
+      </div>
+      <!-- BEGIN NEXT-SONG -->
+      <div class="main-nextsong mobile-tablet-hiden">
+        <h1>Tất cả thành viên</h1>
+        <h2>Bùi Văn Châu</h2>
+        <h2>Hoàng Phúc</h2>
+        <h2>Võ Văn Tú</h2>
+        <h2>Văn Thị Thuỳ Linh</h2>
+      </div>
+      <!-- BEGIN PLAYER ON MOBILE -->
+      <!-- active -->
+      <div class="mobile-player">
+        <div class="mobile-player__headding">
+          <img
+            src="./img/icon-home/small-logo.svg"
+            alt="icon-home"
+            class="mobile-player__headding-img"
+          />
+          <div class="mobile-player__headding-option">
+            <span class="mobile-player__headding-option-item">ĐANG PHÁT</span>
+            <span class="mobile-player__headding-option-item">LYRIC</span>
+          </div>
+          <div class="mobile-player__headding-close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="mobile-player__body">
+          <div
+            class="mobile-player__body-thumb"
+            style="background-image: url(./assets/img/songs/0.webp)"
+          ></div>
+          <div class="mobile-player__body-now">
+            <span class="mobile-player__body-now-name">Tình Yêu Ngủ Quên</span>
+            <span class="mobile-player__body-now-singer"
+              >Hoàng Tôn, LyHan, Orinn Remix</span
+            >
+            <span class="mobile-player__body-now-extra">Remix Version</span>
+          </div>
+        </div>
+        <div class="mobile-player__ctrl">
+          <div class="music-control__center-action music-control__icon">
+            <!-- music-control__icon-random--active -->
+            <i
+              class="fas fa-random music-control__icon1 mobile-player__ctrl-icon js__mobile-player__ctrl-icon1"
+            ></i>
+            <i
+              class="fas fa-caret-left music-control__icon2 mobile-player__ctrl-icon js__mobile-player__ctrl-icon2"
+            ></i>
+            <!-- music-control__icon-play--active -->
+            <div
+              class="music-control__icon-play mobile-player__ctrl-icon js__mobile-player__ctrl-icon"
+            >
+              <i class="fas fa-play music-control__icon3"></i>
+              <i class="fas fa-pause music-control__icon33"></i>
+            </div>
+            <i
+              class="fas fa-caret-right music-control__icon4 mobile-player__ctrl-icon js__mobile-player__ctrl-icon4"
+            ></i>
+            <!-- music-control__icon-repeat--active -->
+            <i
+              class="fas fa-redo music-control__icon5 mobile-player__ctrl-icon js__mobile-player__ctrl-icon5"
+            ></i>
+          </div>
+          <div class="music-control__progress mobile-player__ctrl-progress">
+            <span
+              class="music-control__progress-time-start mobile-player__ctrl-progress-time-start"
+              >00:00</span
+            >
+            <input
+              id="progress2"
+              class="music-control__progress-input mobile-player__ctrl-progress-input"
+              type="range"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+            <span
+              class="music-control__progress-time-duration mobile-player__ctrl-progress-time-duration"
+              >00:00</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- END PLAYER ON MOBILE -->
+      <!-- model comments -->
+      <div class="comment">
+        <div class="comment__title">
+          <p>Bình luận</p>
+          <div class="comment__title--close">X</div>
+        </div>
+        <ul class="comment__textmains">
+          <!-- <div class="comment__textmains--user">
+            <div class="comment__textmains--avatar"></div>
+            <p class="comment__textmains--text">fdasfd</p>
+          </div> -->
+        </ul>
+       <form action="" class="form-comment">
+         <input class="comment-textuser" ></input>
+         <div class="comment-submit">></div>
+       </form>
+      </div>
+      <div class="model-login">
+        <form>
+          <div class="container" id="model-login">
+            <label for="uname"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              id="username"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="pass"
+              required
+            />
+
+            <div class="btnlogin" onclick="loginn()">Login</div>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+          </div>
+
+          <div
+            class="container"
+            style="background-color: #f1f1f1"
+            id="model-login"
+          >
+            <button type="button" class="cancelbtn" id="cancelbtn">
+              Cancel
+            </button>
+            <span class="psw"><a href="#">Đỗi mật khẩu</a></span>
+          </div>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </div>
+
+    <script src="./javascript/main.js"></script>
+    <script>
+      //lấy tên bài hát bằng cách bỏ đi đuôi .ext
+      function getname(name) {
+        var newString = "";
+        for (let i = 0; i < name.length; i++) {
+          if (name[i] == ".") {
+            return newString;
+          } else {
+            newString += name[i];
+          }
+        }
+        return newString;
+      }
+      // phát nhạc ở footer
+      var allmymusic;
+      var isPlaying = false;
+      var isRepeat = false;
+      var isRandom = false;
+      var indexstart = 0;
+      var volume = 100;
+      var isMute = false;
+      var commentmodel = document.querySelector('.comment')
+      var closecommentmodel = document.querySelector('.comment__title--close')
+      var commentSubmit = document.querySelector('.comment-submit')
+      // click vo lap lai bai hat se set isRepeat
+      function resetRepeat() {
+        const btnRepeat = document.querySelector(".music-control__icon5");
+        if (isRepeat) {
+          btnRepeat.classList.toggle("music-control__icon-repeat--active");
+          isRepeat = false;
+        } else {
+          btnRepeat.classList.toggle("music-control__icon-repeat--active");
+          isRepeat = true;
+        }
+      }
+      // next bai hat
+      function nextbtn(i) {
+        if (i == allmymusic.length - 1) {
+          i = 0;
+          let namemusic = getname(allmymusic[i].name);
+          footermusic(namemusic, allmymusic[i].desc, i);
+        } else {
+          i += 1;
+          let namemusic = getname(allmymusic[i].name);
+          footermusic(namemusic, allmymusic[i].desc, i);
+        }
+      }
+      // prev bai hat
+      function prevbtn(i) {
+        if (i == 0) {
+          i = allmymusic.length - 1;
+          let namemusic = getname(allmymusic[i].name);
+          footermusic(namemusic, allmymusic[i].desc, i);
+        } else {
+          i -= 1;
+          let namemusic = getname(allmymusic[i].name);
+          footermusic(namemusic, allmymusic[i].desc, i);
+        }
+      }
+      // ham nghe nhac khi click vo btn play
+      function playmusic(i) {
+        if (isPlaying) {
+          document
+            .querySelector(".music-control__icon-play")
+            .classList.toggle("music-control__icon-play--active");
+          document.querySelector(`.datamusic${i}`).pause();
+          isPlaying = false;
+        } else {
+          // nút play or pause
+          document
+            .querySelector(".music-control__icon-play")
+            .classList.toggle("music-control__icon-play--active");
+          document.querySelector(`.datamusic${i}`).play();
+          isPlaying = true;
+        }
+      }
+      //khi click vo bai nha se render ra bai nhac do o footer
+      function footermusic(name, author, i,idSong) {
+        // reset lại comment
+         document.querySelector('.comment__textmains').innerHTML =``;
+        // khi chon bai moi thi reset lai
+        isPlaying = false;
+       
+        document.querySelector(".main-music-control").innerHTML = `
+          <div class="row">
+            <div class="col l-3 m-3 s-8">
+              <div class="music-control__left">
+                <div class="music-control__left-img-box">
+                  <div
+                    class="music-control__left-img"
+                    style="background-image: url(./img/songs/0.webp)"
+                  ></div>
+                </div>
+
+                <div class="music-control__left-content">
+                  <span class="music-control__left-content-song js__main-color"
+                    >${name}</span
+                  >
+                  <span class="music-control__left-content-singer js__sub-color"
+                    >${author}</span
+                  >
+                </div>
+                <div
+                  class="music-control__left-action tablet-hiden mobile-hiden"
+                >
+                  <!-- music-control__left-action-tym-box-active -->
+                  <div class="music-control__left-action-tym-box">
+                    <i class="fas fa-heart music-control__left-action-tym"></i>
+                    <i
+                      class="far fa-heart music-control__left-action-tym-non"
+                    ></i>
+                  </div>
+                  <i
+                    class="fas fa-ellipsis-h music-control__left-action-option js__main-color js__toast comment-btn"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col l-6 m-7 s-4 rs__main-music-control-flex-1">
+              <div class="music-control__center">
+                <div class="music-control__center-action music-control__icon">
+                  <!-- music-control__icon-random--active -->
+                   <!-- <i
+                    class="fas fa-random music-control__icon1 js__music-control__icon1 js__main-color mobile-hiden"
+                   "
+                  ></i> -->
+                  <i
+                    class="fas fa-caret-left music-control__icon2 js__music-control__icon2 js__main-color"
+                    onclick = "prevbtn(${i})"
+                  ></i>
+                  <!-- music-control__icon-play--active -->
+                  <div
+                    class="music-control__icon-play js__music-control__icon-play"
+                  >
+                    <i
+                      class="fas fa-play music-control__icon3 js__main-color js__border"
+                    ></i>
+                    <i
+                      class="fas fa-pause music-control__icon33 js__main-color js__border"
+                    ></i>
+                  </div>
+                  <i
+                    class="fas fa-caret-right music-control__icon4 js__music-control__icon4 js__main-color"
+                    onclick = "nextbtn(${i})"
+                  ></i>
+                  <!-- music-control__icon-repeat--active -->
+                  <i
+                    class="fas fa-redo music-control__icon5 js__music-control__icon5 mobile-hiden js__main-color"
+                    onclick = "resetRepeat()"
+                  ></i>
+                </div>
+                <div class="music-control__progress mobile-hiden">
+                  <span
+                    class="music-control__progress-time-start js__music-control__progress-time-start js__main-color"
+                    >00:00</span
+                  >
+                  <input
+                    id="progress"
+                    class="music-control__progress-input"
+                    type="range"
+                    value="0"
+                    step="1"
+                    min="0"
+                    max="100"
+                  />
+                  <!-- <div class="music-control__progress-update">
+                                    <div class="music-control__progress-update-timeline"></div>
+                                </div> -->
+                  <span
+                    class="music-control__progress-time-duration js__music-control__progress-time-duration js__main-color"
+                    >00:00</span
+                  >
+                </div>
+                 <audio src="../uploads/${name}.mp3" class="datamusic${i}"></audio>
+              </div>
+            </div>
+            <div class="col l-3 m-2 s-0">
+              <div class="music-control__right">
+                <i
+                  class="music-control__right-icon1 ipad-air-hiden js__main-color js__toast fas fa-photo-video"
+                ></i>
+                <i
+                  class="music-control__right-icon2 ipad-air-hiden js__main-color js__toast fas fa-microphone"
+                ></i>
+                <i
+                  class="music-control__right-icon3 ipad-air-hiden js__main-color js__toast far fa-square"
+                ></i>
+                <!-- music-control__right--active -->
+                <div class="music-control__right-volume-icon">
+                  <i
+                    class="music-control__right-icon4 js__main-color fas fa-volume-down"
+                  ></i>
+                  <i
+                    class="music-control__right-icon5 js__main-color fas fa-volume-mute"
+                  ></i>
+                </div>
+                <div class="music-control__volume-progress">
+                  <input
+                    id="progress1"
+                    class="music-control__volume-input"
+                    type="range"
+                    value="100"
+                    step="1"
+                    min="0"
+                    max="100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+       `;
+         // khi submit form comment
+          var valuemycomment = document.querySelector('.comment-textuser')
+          var mycomment = document.createElement('li')
+        commentSubmit.onclick = ()=>{
+           if(valuemycomment.value){
+                $.ajax({
+                        url: "/upcomment",
+                        type: "POST",
+                        dataType:"json",
+                        contentType: "application/json",
+                        data:JSON.stringify({comment: valuemycomment.value, songid: idSong}),
+                      }).then(data=>{
+                          
+                      })
+              }
+              // inner html
+              $.ajax({
+              url: "/comment",
+              type: "POST",
+            }).then(data=>{
+              if(data.massage == 'success'){
+                  if(valuemycomment.value){
+                    var commentme = document.createElement('li')
+                   commentme.innerHTML = `
+                                  <div class="comment__textmains--user">
+                                      <div class="comment__textmains--avatar"></div>
+                                      <p class="comment__textmains--text">${valuemycomment.value}</p>
+                                    </div>
+                                  `
+                  document.querySelector('.comment__textmains').appendChild(commentme)
+              }
+              }else{
+                alert('vui long dang nhap')
+              }
+            }) 
+        }
+    
+          const btncomment = document.querySelector('.comment-btn')
+       // click btn close comment 
+        closecommentmodel.onclick =()=>{
+                overlay.style.display = 'none'
+              commentmodel.classList.remove('comment-active')
+            
+          }
+        // onclick vo btn commnet
+        btncomment.onclick = ()=>{
+          overlay.style.display = 'block'
+          commentmodel.classList.add('comment-active')
+              // show ra list comment 
+            $.ajax({
+                  url: "/showcomment",
+                  type: "POST",
+                  dataType:"json",
+                  contentType: "application/json",
+                  data:JSON.stringify({songid: idSong}),
+              }).then(data=>{ 
+                if(data.comment.length>0){
+                   var allcomment =``;
+                  for(var i =0; i<data.comment.length;i++){
+                    var cment = mycomment.innerHTML = `
+                                    <div class="comment__textmains--user">
+                                        <div class="comment__textmains--avatar"></div>
+                                        <p class="comment__textmains--text">${data.comment[i].text}</p>
+                                      </div>
+                                    `
+                    allcomment+=cment;
+                  }
+                  document.querySelector('.comment__textmains').innerHTML=(allcomment)
+                   
+                }
+                   })
+        }
+        // nut play music
+        const btnplaymusic = document.querySelector(
+          ".music-control__icon-play"
+        );
+        btnplaymusic.classList.toggle("music-control__icon-play--active");
+        document.querySelector(`.datamusic${i}`).play();
+        isPlaying = true;
+        btnplaymusic.addEventListener("click", () => {
+          playmusic(i);
+        });
+        // Khi tiến độ bài hát thay đổi
+        const audiomusic = document.querySelector(`.datamusic${i}`);
+        const progress = document.querySelector("#progress");
+        const progressVolume = document.querySelector("#progress1");
+        const volumeIcon = document.querySelector(
+          ".music-control__right-volume-icon"
+        );
+        audiomusic.ontimeupdate = function () {
+          if (audiomusic.duration) {
+            const progressPercent = Math.floor(
+              (audiomusic.currentTime / audiomusic.duration) * 100
+            );
+            progress.value = progressPercent;
+          }
+        };
+        // Xử lý khi tua song
+        progress.onchange = function (e) {
+          const seekTime = (audiomusic.duration / 100) * e.target.value;
+          audiomusic.currentTime = seekTime;
+        };
+        // Xử lý next song khi audio ended
+        audiomusic.onended = function () {
+          if (isRepeat == true) {
+            audiomusic.play();
+          } else {
+            nextbtn(i);
+          }
+        };
+        // khi bat tat am luong
+        volumeIcon.onclick = function () {
+          isMute = !isMute;
+          volumeIcon.classList.toggle("music-control__right--active");
+          if (isMute) {
+            audiomusic.volume = 0;
+            progressVolume.value = 0;
+          } else {
+            audiomusic.volume = volume / 100;
+            progressVolume.value = volume;
+          }
+        };
+        // khi tua am luong
+        progressVolume.onchange = function (e) {
+          volume = e.target.value;
+          audiomusic.volume = e.target.value / 100;
+          if (e.target.value == 0) {
+            volumeIcon.classList.add("music-control__right--active");
+            isMute = true;
+          } else {
+            volumeIcon.classList.remove("music-control__right--active");
+            isMute = false;
+          }
+        };
+      }
+  
+      $.ajax({
+        url: "/allmusic",
+        type: "GET",
+      }).then((data) => {
+        allmymusic = data;
+        var optionall = document.querySelector(
+          ".option-all__songs-list.list-main"
+        );
+        for (let i = 0; i < 8; i++) {
+          var textNode = document.createElement("li");
+          textNode.classList.add("songs-item");
+          // render ra cac bai hat vao danh sach phat
+          textNode.innerHTML = `
+
+                            <div class="songs-item-left">
+                              <img
+                                src="../img/songs/0.webp"
+                                alt="danh sanh nhac"
+                                class="songs-item-left-img songs-item-left-img1"
+                                onclick = "footermusic( '${getname(
+                                  data[i].name
+                                )}','${data[i].desc}',${i},'${data[i]._id}')"
+                              />
+                              <div class="songs-item-left-body">
+                                <h3 class="songs-item-left-body-name">
+                                  ${getname(data[i].name)}
+                                </h3>
+                                <span class="songs-item-left-body-singer"
+                                  >${data[i].desc}</span
+                                >
+                              </div>
+                            </div>
+
+                            <div class="songs-item-right">
+                              <span class="songs-item-right-mv"
+                                ><i class="fas fa-photo-video"></i
+                              ></span>
+                              <span class="songs-item-right-lyric"
+                                ><i class="fas fa-microphone"></i
+                              ></span>
+
+                              <span class="songs-item-right-tym">
+                                <i
+                                  class="fas fa-heart songs-item-right-tym-first"
+                                ></i>
+                                <i
+                                  class="far fa-heart songs-item-right-tym-last"
+                                ></i>
+                              </span>
+                              <span class="songs-item-right-duration">04:05</span>
+                              <span class="songs-item-right-more"
+                                ><i class="fas fa-ellipsis-h"></i
+                              ></span>
+                            </div>
+
+                `;
+          optionall.appendChild(textNode);
+        }
+      
+      });
+
+      listmy.onclick = () => {
+        $.ajax({
+          url: "/mymusic",
+          type: "GET",
+        }).then((data) => {
+          // window.history.replaceState(
+          //   null,
+          //   (document.title = "mymusic"),
+          //   "/mymusic"
+          // );
+          window.location.href = "/mymusic";
+        });
+      };
+
+      // phát bài hát ở khám phá
+      // const audio = document.querySelector(".datamusic1");
+      // const listmusic1 = document.querySelector(".songs-item-left-img1");
+      // console.log(listmusic1);
+      // listmusic1.onclick = () => {
+      //   console.log("chaudz22", audio);
+      //   audio.play();
+      // };
+      // console.log("chauchau", audio, listmusic1);
+
+      // lấy tên bài hát loại bỏ đuôi ext
+    </script>
+  </body>
+</html>
